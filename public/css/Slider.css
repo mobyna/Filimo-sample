@@ -1,0 +1,190 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide , #one {
+  display: flex;
+  justify-content: start !important;
+  align-items: start !important;
+  width: 165px  !important;
+  height: 260px !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+
+#free-back{
+  padding-top: 2px;
+  padding-right: 3px;
+  width: 165px !important;
+  height: 220px !important;
+  height: 100% !important;
+}
+
+
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px !important;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin: 20px auto;
+}
+
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.append-buttons button {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 4px 10px;
+  margin: 0 10px;
+  font-size: 8px;
+}
+
+
+
+
+.swiper-slide , #two {
+  font-size: 18px;
+  display: flex;
+  width: 307px  !important;
+  height: 192px !important;
+  border-radius: 7px;
+  text-align: right;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+
+#Five , #Four ,#Six,#Seven,#Eight{
+  width: 307px  !important;
+  height: 192px !important;
+  border: none  !important;
+  background-color: transparent !important;
+}
+
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.append-buttons button {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #007aff;
+  color: #007aff;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
+}
+
+.blury {
+  background-size: cover;
+  background-position: center;
+  width: 100% !important;
+  height: 100% !important;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blury::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(7px);
+}
+
+.append-buttons > div {
+  position: relative;
+  z-index: 1;
+}
+
+
+.swiper-slide , #three {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 430px !important;
+  height: 190px !important;
+  border: solid 2px #444444 !important;
+  background-color: #1A1A1A !important;
+  padding: 25px !important;
+  text-align: right !important;
+  gap: 8px !important;
+  flex-direction: column !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin: 20px auto;
+}
+
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.account{
+  width: 24px !important; 
+  height: 24px !important;
+}
+.virggo{
+  width: 40px !important;
+  height: 34px !important;
+}
+
+
+.fav-img-back{
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 165px;
+  height: 220px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+#free{
+  width: 63px;
+  height: 25px;
+  background-color:#132d1c;
+  color:#1bab5c;
+}
+
+@media (max-width:1024px) {
+  #sarimg , #ahoimg{
+    display: none;
+  }
+}

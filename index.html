@@ -1,0 +1,1006 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="/public/css/Slider.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/js/all.js">
+  </head>
+  <body>
+
+    <!--wrapper-->
+
+      <div class="bg-[#151515] font-['filimo']" id="wrapper">
+
+        <!--menu-->
+        <div class="w-[100%] h-[52px] flex flex-wrap justify-between px-[6rem] max-xl:px-[1rem]  backdrop-opacity-[.8] fixed z-50 top-0 bg-[#040404] "  id="menu">
+          <div class=" flex flex-wrap justify-between h-[100%] content-center" id="menu__1">
+            <div class="img h-[fit] border-l border-[#e0e0e0] l-[30px] max-sm:border-none">
+              <a href="#" class=" h-[inherit]">
+                <img src="./images/fa-filimo-dark-logo.svg" alt="" class="w-[80px] h-[inherit] ml-[25px] cursor-pointer"></a>
+            </div>
+            <ul class="menu_elements flex flex-wrap px-[30px] gap-[30px] text-[13px] font-semibold transition duration-100 ease-in-out max-md:gap-[10px] max-md:px-[10px] max-sm:hidden">
+              <li class="menu_elem">
+                <span class="w-[24px] h-[24px]">
+                  <svg viewBox="0 0 24 24" class="menu-icon">
+                    <g id="ui-icon-fire" viewBox="0 0 20 20" class="w-[12.32px] h-[15.42px]">
+                      <path d="M14.9817 9.29572C14.7793 9.03171 14.5329 8.8029 14.3041 8.57409C13.7145 8.04606 13.0456 7.66764 12.4824 7.11321C11.486 6.13683 11.079 4.67766 11.3079 3.31885C11.3932 2.81244 10.953 2.3161 10.5056 2.56826C10.1542 2.76632 9.82751 2.99853 9.52546 3.24102C7.24615 5.07151 6.3485 8.30127 7.42216 11.0734C7.45736 11.1614 7.49256 11.2494 7.49256 11.3638C7.49256 11.5574 7.36055 11.7334 7.18455 11.8039C6.98214 11.8919 6.77092 11.8391 6.60372 11.6982C6.55091 11.6542 6.51571 11.6102 6.48051 11.5486C6.02925 10.9776 5.75014 10.2942 5.64237 9.58309C5.54699 8.9538 4.70017 8.51622 4.43263 9.09373C3.98868 10.052 3.77785 11.1298 3.84038 12.1735C3.89318 12.6135 3.94598 13.0535 4.09559 13.4935C4.2188 14.0216 4.45641 14.5496 4.72042 15.016C5.67087 16.5385 7.31655 17.6297 9.08544 17.8498C10.9687 18.0874 12.984 17.7442 14.4273 16.4417C16.0378 14.9808 16.601 12.6399 15.7738 10.6334L15.6594 10.4046C15.4746 9.99976 14.9817 9.29572 14.9817 9.29572ZM12.2008 14.84C11.9544 15.0512 11.5496 15.28 11.2327 15.368C10.5182 15.6232 9.80358 15.4344 9.24326 15.0899C8.97628 14.9257 9.0751 14.5425 9.34969 14.3914C9.99764 14.0349 10.3962 13.4412 10.5375 12.8423C10.6871 12.1383 10.4055 11.5574 10.2911 10.8798C10.2373 10.5481 10.2155 10.2415 10.2384 9.94018C10.2647 9.59462 10.6858 9.56464 10.8834 9.84938C10.9196 9.90155 10.9568 9.95182 10.9951 9.99976C11.6728 10.8798 12.7376 11.267 12.9664 12.4639C13.0016 12.5871 13.0192 12.7103 13.0192 12.8423C13.0456 13.5639 12.7288 14.356 12.2008 14.84Z" fill="url(#paint0_radial_923_68543)"></path>
+                      <defs>
+                      <radialGradient id="paint0_radial_923_68543" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(13 21.5005) rotate(-115.942) scale(20.573 28.2969)">
+                      <stop stop-color="#F58540"></stop>
+                      <stop offset="0.541667" stop-color="#F99F3E"></stop>
+                      <stop offset="1" stop-color="#FEC23B"></stop>
+                      </radialGradient>
+                      </defs>
+                      </g>
+                  </svg>
+                </span>
+                فیلیموتور
+                <span>
+
+            </span></li>
+              <li class="menu_elem">
+                <span>
+                  <svg id="icon-school" class="menu-icon w-[24px] h-[24px]">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.7471 15.0152C20.71 14.9917 20.7094 14.9619 20.7088 14.9335L20.7085 14.9229C20.7004 14.7153 20.6691 14.5106 20.627 14.3074C20.437 13.3978 20.0721 12.5655 19.4694 11.8383C19.2029 11.5166 18.8959 11.2356 18.5477 11.0005C18.1155 10.7088 17.6819 10.4181 17.241 10.1391C16.1661 9.45871 15.0632 8.8235 13.9467 8.20948C13.0418 7.7116 12.1284 7.22911 11.1945 6.78379C10.835 6.61186 10.4735 6.44325 10.0987 6.30386C9.96258 6.25312 9.82426 6.20577 9.68356 6.16861C9.50319 6.12068 9.3201 6.12507 9.13939 6.17788C9.03793 6.20776 8.9477 6.25709 8.86786 6.3248C8.85347 6.33703 8.83859 6.34854 8.81968 6.36317L8.79142 6.38515C8.79316 6.37422 8.79423 6.36512 8.79516 6.35729L8.79516 6.35728C8.79681 6.3433 8.79798 6.33335 8.80163 6.32422C9.20723 5.31744 9.80902 4.44848 10.6978 3.78281C11.1491 3.44493 11.6515 3.20166 12.1935 3.03363C12.3513 2.98446 12.506 2.99497 12.6631 3.02833C12.8721 3.07303 13.0707 3.14678 13.2679 3.22575C13.7621 3.42374 14.2421 3.65253 14.7167 3.89141C16.1828 4.62934 17.6093 5.43382 18.9855 6.32133C19.3162 6.53464 19.6408 6.75622 19.9523 6.99602C20.0935 7.10453 20.2259 7.22216 20.351 7.34781C20.4464 7.44308 20.5105 7.5554 20.5488 7.6823C20.6306 7.95197 20.673 8.22894 20.7038 8.50764C20.8191 9.551 20.851 10.5978 20.8579 11.6462C20.8626 12.3896 20.857 13.1328 20.8234 13.8757C20.8118 14.1296 20.7946 14.3834 20.7773 14.6371L20.7773 14.6376C20.7698 14.7484 20.7622 14.8591 20.7552 14.9699C20.7548 14.9773 20.7533 14.9847 20.7512 14.9944L20.7512 14.9944C20.75 15.0003 20.7485 15.007 20.7471 15.0152ZM14.1533 20.3588C13.7899 20.5327 13.4234 20.6999 13.045 20.8418C13.0991 20.5394 13.2081 19.6916 12.7595 18.7589C12.293 17.7893 11.5108 17.3239 11.238 17.1774C11.238 17.1774 14.0733 15.7034 15.1411 15.0891C16.072 14.5532 16.9945 14.0036 17.8864 13.4073C18.1238 13.2486 18.3568 13.0831 18.5856 12.9129C18.7181 12.8145 18.8451 12.7075 18.9628 12.5927C19.1201 12.4394 19.2176 12.2516 19.2427 12.0339C19.2484 11.9831 19.2429 11.9308 19.2375 11.8791L19.236 11.8641C19.2333 11.8378 19.2274 11.8119 19.2198 11.7781L19.2198 11.778L19.2197 11.7776C19.2158 11.7604 19.2114 11.7411 19.2068 11.7187C19.2195 11.7306 19.2292 11.7395 19.237 11.7465L19.237 11.7465L19.237 11.7465L19.237 11.7465L19.2371 11.7466C19.2493 11.7577 19.2566 11.7643 19.2626 11.7717C19.8065 12.4279 20.212 13.1545 20.4432 13.9694C20.5586 14.3746 20.6162 14.7883 20.621 15.2084C20.6255 15.5716 20.5762 15.9295 20.4985 16.2841C20.4737 16.397 20.423 16.5003 20.3438 16.5865C20.2578 16.6803 20.1697 16.7735 20.0738 16.8573C19.8438 17.0586 19.592 17.2339 19.3391 17.4066C18.6205 17.897 17.8759 18.3475 17.1209 18.7824C16.1505 19.3416 15.1661 19.8751 14.1533 20.3588ZM8.07684 20.6392L9.61375 18.8289C10.8451 19.5824 10.6784 20.7516 10.645 20.9856L10.643 21H8.25158C8.05981 21 7.95469 20.7829 8.07684 20.6392ZM8.38959 15.5583C8.39937 15.7507 8.15125 15.8425 8.02494 15.6938L6.36162 13.7348C6.27829 13.637 6.12363 13.6379 6.04209 13.7371L4.40541 15.7243C4.28446 15.8713 4.04102 15.7905 4.03829 15.603C4.02161 14.4008 3.98611 11.5985 4.00578 10.6796C4.0171 10.1601 4.04221 9.64066 4.08256 9.12216C4.10971 8.77004 4.13899 8.41759 4.20292 8.06952C4.22743 7.93593 4.25935 7.80324 4.29493 7.67204C4.32591 7.5574 4.41639 7.38929 4.50066 7.3037C4.65268 7.14833 4.81994 7.00985 4.99435 6.87981C5.42888 6.55551 5.88317 6.25917 6.34468 5.97286C7.7077 5.12691 9.10825 4.34453 10.5554 3.64194C10.6434 3.59952 10.7321 3.55848 10.8208 3.51742C10.8527 3.50264 10.8847 3.48786 10.9166 3.473C10.9205 3.4713 10.9249 3.47083 10.9313 3.47013C10.9358 3.46963 10.9414 3.46902 10.9486 3.46779C10.9362 3.50878 10.9088 3.52466 10.883 3.53958C10.8765 3.54336 10.87 3.54708 10.864 3.55114C10.0759 4.0804 9.45886 4.75881 9.00457 5.57687C8.75245 6.03063 8.58161 6.51279 8.49777 7.02235C8.46662 7.21248 8.449 7.40493 8.43461 7.59631C8.37912 8.33482 8.3266 9.07366 8.30353 9.81366C8.26744 10.9882 8.25459 12.1625 8.28446 13.3374C8.29136 13.6155 8.35171 14.8154 8.38959 15.5583Z"></path>
+                    </svg>
+                </span>
+                فیلیمومدرسه</li>
+              <li class="menu_elem">
+              <span><svg viewBox="0 0 24 24" class="menu-icon w-[18px] h-[18px]"><path d="M19.16 4.84a8 8 0 0 0-12 10.56l-4.4 4.39a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L8.6 16.82a8 8 0 0 0 10.56-12Zm-1.42 9.9a6 6 0 1 1 0-8.48A6 6 0 0 1 17.74 14.74Z"></path></svg></span>
+              جستجو
+              </li>
+            </ul> 
+          </div>
+          <div id="acount" class="h-[100%] gap-[15px] flex flex-wrap content-center py-[5px]">
+            <button class="subscription-btn px-[16px] h-[38px] w-[117px] text-[11px] font-[500]">
+              <span>
+                <svg viewBox="0 0 24 24" class="w-[18px] h-[18px] fill-[whitesmoke]">
+                  <g id="ui-icon-subscription" viewBox="0 0 24 24"><path d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"></path><path d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"></path><circle cx="16" cy="9" r="1"></circle><circle cx="16" cy="15" r="1"></circle><circle cx="16" cy="12" r="1"></circle></g>
+                </svg>
+              </span>
+              خرید اشتراک
+
+            </button>
+            <button class="bg-[#363636] h-[38px] w-[54px] flex items-center justify-center text-[11px] font-[500] text-[whitesmoke] rounded-md transition-all duration-300 ease-in-out" id="bright">ورود</button>
+          </div>
+        </div>
+        <!--menu ends-->
+
+        <!--subscription-->
+        <div class=" w-[100%] h-[560px]  flex flex-col justify-ceter items-center mt-
+        [52px] bg-center bg-clip-border bg-no-repeat bg-cover transition-all duration-500 ease-in-out"  id="subscription">
+
+        
+
+        <div class="flex flex-col justify-center items-center w-[100%] h-[100%] bg-sub-gradient px-[6rem] max-xl:px-[4rem] max-lg:px-[1rem]" id="sub">
+          <span class="text-[14px] font-[700] text-[#f9a73d] mb-2">با فیلیمو بی‌وقفه فیلم ببین</span>
+        <h1 class="text-[35px] font-[700] text-[whitesmoke]">کنترل همیشه دست توست!</h1>
+        <div class="flex gap-20 mt-11 max-xl:gap-14 max-md:flex-col max-md:gap-2 max-md:mt-3">
+          <span class="ending-text">
+            <span class="cinema-check-circle">
+              <svg viewBox="0 0 24 24" class="w-[14px] h-[14px]">
+                <g id="ui-icon-check" class="fill-[#1bab5c]">
+                  <path d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"></path></g></svg></span>
+            95 هزار اپیزود فیلم و سریال برای تماشا داری
+          </span>
+          <span class="ending-text">
+            <span class="cinema-check-circle">
+              <svg viewBox="0 0 24 24" class="w-[14px] h-[14px]">
+                <g id="ui-icon-check" class="fill-[#1bab5c]">
+                  <path d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"></path></g></svg></span>
+            می‌تونی دانلود کنی بعد بدون اینترنت تماشا کنی
+          </span>
+          <span class="ending-text">
+            <span class="cinema-check-circle">
+              <svg viewBox="0 0 24 24" class="w-[14px] h-[14px]">
+                <g id="ui-icon-check" class="fill-[#1bab5c]">
+                  <path d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"></path></g></svg></span>
+            می‌تونی یک عضو، مخصوص تماشای کودک بسازی
+          </span>
+        </div>
+        <div class="flex flex-col gap-2 mt-14 max-md:mt-5">
+          <button class="w-[285px] h-[59px] subscription-btn text-[15px] font-[500]">
+            <span>
+              <svg viewBox="0 0 24 24" class="w-[24px] h-[24px] fill-[whitesmoke]">
+                <g id="ui-icon-subscription" viewBox="0 0 24 24"><path d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"></path><path d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"></path><circle cx="16" cy="9" r="1"></circle><circle cx="16" cy="15" r="1"></circle><circle cx="16" cy="12" r="1"></circle></g>
+              </svg>
+            </span>
+            خرید اشتراک و تماشا</button>
+            <span class="flex items-center justify-center gap-2 text-[#959BA2] text-[10px]">
+              <span>
+                <svg viewBox="0 0 24 24"  class="w-[18px] h-[18px] fill-[#959BA2]"><g id="ui-icon-giftcard" viewBox="0 0 24 24"  class="w-[18px] h-[18px]"><path d="M18.73 5.5h-.91a3 3 0 0 0-5.34-2.61l0 0-.46.8-.46-.8 0 0A3 3 0 0 0 6.18 5.5H4.73a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V8.5A3 3 0 0 0 18.73 5.5ZM16 4.5a1 1 0 1 1-1-1A1 1 0 0 1 16 4.5Zm-8 0a1 1 0 1 1 1 1A1 1 0 0 1 8 4.5Zm-3.27 3H9.85L8.37 10.1a1 1 0 0 0 .37 1.36 1 1 0 0 0 1.37-.37L12 7.76l1.89 3.33a1 1 0 0 0 1.37.37 1 1 0 0 0 .37-1.36L14.15 7.5h4.58a1 1 0 0 1 1 1V14h-16V8.5A1 1 0 0 1 4.73 7.5Zm14 12h-14a1 1 0 0 1-1-1V17h16v1.5A1 1 0 0 1 18.73 19.5Z"></path></g></svg>
+              </span>
+              تخفیف ویژه برای کاربران جدید
+            </span>
+        </div>
+        </div>
+
+         
+        </div>
+
+        <!--favorites-->
+        <div class="h-[320px] bg-[#151515] px-[4rem] pt-[30px] max-xl:px-[1rem]" id="favor">
+          <div class="flex flex-row gap-[20px]" id="fav-title">
+            <span class=" text-[#e0e0e0] text-[20px] font-bold leading-[24px]">محبوب ترین های فیلیمو</span>
+            <div class="h-[24px] border-[1px] border-[#e0e0e0] w-[116px] flex justify-between rounded-full p-[2px] leading-[24px] cursor-pointer" id="switch_fav">
+              <div class="fav-switch bg-[#313131]" id="favorser">سریال</div>
+              <div class="fav-switch" id="favormov">فیلم</div>
+            </div>
+          </div> 
+        
+          <div class="fav-switch-item" id="fav_series">
+            <div class="fav-img fav-img-back back-bright" style="background-image: url(/images/mov_149097_185106.jpg);"  id="mortalimg">
+              <img src="./images/exclusive-fa.svg" alt="" class="w-[95px] h-[13px]">
+            </div>
+            <div class="fav-img fav-img-back back-bright" style="background-image: url(/images/mov_149248_185274.jpg);" id="karmaniimg">
+            </div>
+            <div class="fav-img fav-img-back back-bright" style="background-image: url(/images/mov_149195_185164.jpg);" id="golimg">
+              <img src="./images/exclusive-fa.svg" alt="" class="w-[95px] h-[13px]">
+            </div>
+            <div class="fav-img fav-img-back back-bright" style="background-image: url(/images/mov_149058_184625.jpg);" id="laimg">
+              <img src="./images/exclusive-fa.svg" alt="" class="w-[95px] h-[13px]">
+            </div>
+            <div class="fav-img fav-img-back back-bright" style="background-image: url(/images/mov_149096_185050.jpg);" id="jokerimg">
+              <img src="./images/exclusive-fa.svg" alt="" class="w-[95px] h-[13px]">
+            </div>
+            <div class="fav-img fav-img-back back-bright" style="background-image: url(/images/mov_149249_185276.jpg);" id="sarimg"></div>
+          </div>
+
+          <div class="fav-switch-item hidden" id="fav_movies">
+            <div class="fav-img fav-img-back" id="sotunimg" style="background-image: url(/images/mov_148098_181296.jpg);">
+              <img src="./images/exclusive-fa.svg" alt="" class="w-[95px] h-[13px]">
+            </div>
+            <div class="fav-img fav-img-back" id="paltoimg" style="background-image: url(/images/mov_147944_175967.jpg);">
+              <img src="./images/exclusive-fa.svg" alt="" class="w-[95px] h-[13px]">
+            </div>
+            <div class="fav-img fav-img-back" id="ruzimg" style="background-image: url(/images/mov_147582_169763.jpg);">
+              <img src="./images/exclusive-fa.svg" alt="" class="w-[95px] h-[13px]">
+            </div>
+            <div class="fav-img fav-img-back" id="palaimg" style="background-image: url(/images/mov_147067_158271.jpg);">
+              <img src="./images/exclusive-fa.svg" alt="" class="w-[95px] h-[13px]">
+            </div>
+            <div class="fav-img fav-img-back" id="candyimg" style="background-image: url(/images/mov_17534_163713.jpg);"></div>
+            <div class="fav-img fav-img-back max-lg:hidden" id="ahoimg" style="background-image: url(/images/mov_146927_169518.jpg);">
+              <img src="./images/exclusive-fa.svg" alt="" class="w-[95px] h-[13px]">
+            </div>
+          </div>
+        </div>
+
+
+
+        <!--sotun-->
+        <div class="h-[395px] hidden" id="sotundiv">
+
+       <div class="h-[100%] bg-[url('/images/mov_cvr_filimo_hor_148098_727.jpg')] bg-cover bg-no-repeat bg-top">
+            <div class="first-grad">
+              <div class="second-grad">
+
+                <div class=" flex justify-between">
+                  <div class="flex flex-col">
+                    <a href="#" class="fav-mov">ستون 14</a>
+                  <span class="fav-dirc">کارگردان: امیرحسین همتی</span>
+                  <div class="mb-6 flex gap-2">
+                    <span class="mortal-wound-imdb">
+                      <img src="./images/icon-imdb.png" class="w-[22px] h-[16px]" alt="">
+                      4.3
+                    </span>
+                    <span class="mortal-wound-genre">درام</span>
+                    <span class="mortal-wound-genre">هیجان انگیز</span>
+                  </div>
+                  <p class="fav-short">ساناز و یاشار وقتی می ترسند، بازی می کنند، این بار با زندگی جلال.</p>
+                  <button class="w-[260px] h-[42px] subscription-btn text-[11px] font-[500] mt-5">
+                    <span>
+                      <svg viewBox="0 0 24 24" class="w-[24px] h-[24px] fill-[whitesmoke]">
+                        <g id="ui-icon-subscription" viewBox="0 0 24 24"><path d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"></path><path d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"></path><circle cx="16" cy="9" r="1"></circle><circle cx="16" cy="15" r="1"></circle><circle cx="16" cy="12" r="1"></circle></g>
+                      </svg>
+                    </span>
+                    خرید اشتراک و تماشا</button>
+
+                    <p class="text-[10px] text-[whitesmoke] mt-4">بالای ۱۵ سال - یک ساعت و ۳۵ دقیقه - محصول ایران - ۱۴۰۰ - کیفیت HD</p>
+                  
+
+                  </div>
+                  <img src="/images/mov_logo_148098_610.png" alt="" class="w-[220px] h-[187px]">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!--palto-->
+        <div class="h-[395px] hidden" id="paltodiv">
+
+          <div class="h-[100%] bg-[url('/images/mov_cvr_filimo_hor_147944_551.jpg')] bg-cover bg-no-repeat bg-top">
+            <div class="first-grad">
+              <div class="second-grad">
+
+                <div class=" flex justify-between">
+                  <div class="flex flex-col">
+                    <a href="#" class="fav-mov">پالتو شتری<a>
+                  <span class="fav-dirc">کارگردان: مهدی علی میرزایی</span>
+                  <div class="mb-6 flex gap-2">
+                    <span class="mortal-wound-imdb">
+                      <img src="./images/icon-imdb.png" class="w-[22px] h-[16px]" alt="">
+                      4.2
+                    </span>
+                    <span class="mortal-wound-genre">کمدی</span>
+                    <span class="mortal-wound-genre">خانوادگی</span>
+                  </div>
+                  <p class="fav-short">این فیلم دربارهٔ پسری جوان است که در رشته فلسفه درس می خواند. او یک پالتوی شتری رنگ از پدرش به ارث برده اما این پالتو برای ...</p>
+                  <button class="w-[260px] h-[42px] subscription-btn text-[11px] font-[500] mt-5">
+                    <span>
+                      <svg viewBox="0 0 24 24" class="w-[24px] h-[24px] fill-[whitesmoke]">
+                        <g id="ui-icon-subscription" viewBox="0 0 24 24"><path d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"></path><path d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"></path><circle cx="16" cy="9" r="1"></circle><circle cx="16" cy="15" r="1"></circle><circle cx="16" cy="12" r="1"></circle></g>
+                      </svg>
+                    </span>
+                    خرید اشتراک و تماشا</button>
+
+                    <p class="text-[10px] text-[whitesmoke] mt-4">بالای ۱۵ سال - یک ساعت و ۳۱ دقیقه - محصول ایران - ۱۳۹۷ - کیفیت HD</p>
+                  
+
+                  </div>
+                  <img src="/images/mov_logo_147944_566.png" alt="" class="w-[220px] h-[118px]">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!--ruz-->
+        <div class="h-[395px] hidden" id="ruzdiv">
+
+          <div class="h-[100%] bg-[url('/images/mov_cvr_filimo_hor_147582_978.jpg')] bg-cover bg-no-repeat bg-top">
+            <div class="first-grad">
+              <div class="second-grad">
+
+                <div class=" flex justify-between">
+                  <div class="flex flex-col">
+                    <a href="#" class="fav-mov">روز ششم</a>
+                  <span class="fav-dirc">کارگردان: حجت قاسم زاده اصل</span>
+                  <div class="mb-6 flex gap-2">
+                    <span class="mortal-wound-imdb">
+                      <img src="./images/icon-imdb.png" class="w-[22px] h-[16px]" alt="">
+                      5.4
+                    </span>
+                    <span class="mortal-wound-genre">جنایی</span>
+                    <span class="mortal-wound-genre">رازآلود</span>
+                  </div>
+                  <p class="fav-short">احمد پس از آزادی از زندان فقط پنج روز فرصت دارد پاسخ چند معما را که به وقایع گذشته مربوط است، پیدا کند و اگر موفق نشود کشته...</p>
+                  <button class="w-[260px] h-[42px] subscription-btn text-[11px] font-[500] mt-5">
+                    <span>
+                      <svg viewBox="0 0 24 24" class="w-[24px] h-[24px] fill-[whitesmoke]">
+                        <g id="ui-icon-subscription" viewBox="0 0 24 24"><path d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"></path><path d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"></path><circle cx="16" cy="9" r="1"></circle><circle cx="16" cy="15" r="1"></circle><circle cx="16" cy="12" r="1"></circle></g>
+                      </svg>
+                    </span>
+                    خرید اشتراک و تماشا</button>
+
+                    <p class="text-[10px] text-[whitesmoke] mt-4">بالای ۱۵ سال - یک ساعت و ۴۶ دقیقه - محصول ایران - ۱۳۹۹ - کیفیت HD</p>
+                  
+
+                  </div>
+                  <img src="/images/mov_logo_147582_964.png" alt="" class="w-[220px] h-[175px]">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!--pala-->
+        <div class="h-[395px] hidden" id="paladiv">
+
+          <div class="h-[100%] bg-[url('/images/mov_cvr_filimo_hor_147067_905.jpg')] bg-cover bg-no-repeat bg-top">
+            <div class="first-grad">
+              <div class="second-grad">
+
+                <div class=" flex justify-between">
+                  <div class="flex flex-col">
+                    <a href="#" class="fav-mov">پالایشگاه</a>
+                  <span class="fav-dirc">کارگردان: مهرداد خوشبخت</span>
+                  <div class="mb-6 flex gap-2">
+                    <span class="mortal-wound-imdb">
+                      <img src="./images/icon-imdb.png" class="w-[22px] h-[16px]" alt="">
+                      4.8
+                    </span>
+                    <span class="mortal-wound-genre">درام</span>
+                    <span class="mortal-wound-genre">جنگی</span>
+                  </div>
+                  <p class="fav-short">در سال ۱۳۵۹ همزمان با جنگ تحمیلی، تعدادی از مهندسین پالایشگاه نفت آبادان در تلاش هستند با امکانات و تجهیزاتی که در دا...</p>
+                  <button class="w-[260px] h-[42px] subscription-btn text-[11px] font-[500] mt-5">
+                    <span>
+                      <svg viewBox="0 0 24 24" class="w-[24px] h-[24px] fill-[whitesmoke]">
+                        <g id="ui-icon-subscription" viewBox="0 0 24 24"><path d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"></path><path d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"></path><circle cx="16" cy="9" r="1"></circle><circle cx="16" cy="15" r="1"></circle><circle cx="16" cy="12" r="1"></circle></g>
+                      </svg>
+                    </span>
+                    خرید اشتراک و تماشا</button>
+
+                    <p class="text-[10px] text-[whitesmoke] mt-4">بالای ۱۵ سال - یک ساعت و ۴۹ دقیقه - محصول ایران - ۱۴۰۱ - کیفیت HD</p>
+                  
+
+                  </div>
+                  <img src="/images/mov_logo_147067_517.png" alt="" class="w-[220px] h-[180px]">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!--candy-->
+        <div class="h-[395px] hidden" id="candydiv">
+
+          <div class="h-[100%] bg-[url('/images/mov_cvr_filimo_hor_17534_218.jpg')] bg-cover bg-no-repeat bg-top">
+            <div class="first-grad">
+              <div class="second-grad">
+
+                <div class=" flex justify-between">
+                  <div class="flex flex-col">
+                    <a href="#" class="fav-mov">آب نبات چوبی</a>
+                  <span class="fav-dirc">کارگردان: محمدحسین فرح بخش</span>
+                  <div class="mb-6 flex gap-2">
+                    <span class="mortal-wound-imdb">
+                      <img src="./images/icon-imdb.png" class="w-[22px] h-[16px]" alt="">
+                      4.3
+                    </span>
+                    <span class="mortal-wound-genre">درام</span>
+                    <span class="mortal-wound-genre">جنایی</span>
+                  </div>
+                  <p class="fav-short">فیلم آب نبات چوبی مسائل جوانان و مشکلات تفاوت نسلی را بررسی می کند. اختلاف دیدگاه نسل قدیم و جدید درباره مشکلات خانواده و ...</p>
+                  <button class="w-[260px] h-[42px] subscription-btn text-[11px] font-[500] mt-5">
+                    <span>
+                      <svg viewBox="0 0 24 24" class="w-[24px] h-[24px] fill-[whitesmoke]">
+                        <g id="ui-icon-subscription" viewBox="0 0 24 24"><path d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"></path><path d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"></path><circle cx="16" cy="9" r="1"></circle><circle cx="16" cy="15" r="1"></circle><circle cx="16" cy="12" r="1"></circle></g>
+                      </svg>
+                    </span>
+                    خرید اشتراک و تماشا</button>
+
+                    <p class="text-[10px] text-[whitesmoke] mt-4">بالای ۱۵ سال - یک ساعت و ۲۳ دقیقه - محصول ایران - ۱۳۹۴ - کیفیت HD</p>
+                  
+
+                  </div>
+                  <img src="/images/mov_logo_17534_130.png" alt="" class="w-[220px] h-[115px]">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!--aho-->
+        <div class="h-[395px] hidden" id="ahodiv">
+
+          <div class="h-[100%] bg-[url('/images/mov_cvr_filimo_hor_146927_695.jpg')] bg-cover bg-no-repeat bg-top">
+            <div class="first-grad">
+              <div class="second-grad">
+
+                <div class=" flex justify-between">
+                  <div class="flex flex-col">
+                    <a href="#" class="fav-mov">آهو</a>
+                  <span class="fav-dirc">کارگردان: هوشنگ گلمکانی</span>
+                  <div class="mb-6 flex gap-2">
+                    <span class="mortal-wound-imdb">
+                      <img src="./images/icon-imdb.png" class="w-[22px] h-[16px]" alt="">
+                      4.1
+                    </span>
+                    <span class="mortal-wound-genre">درام</span>
+                    <span class="mortal-wound-genre">خانوادگی</span>
+                  </div>
+                  <p class="fav-short">آهو حکایت انزوای خودخواسته دختری است که آرزوهایش را بر باد رفته می‌بیند، اما هنوز امیدش را از دست نداده است.</p>
+                  <button class="w-[260px] h-[42px] subscription-btn text-[11px] font-[500] mt-5">
+                    <span>
+                      <svg viewBox="0 0 24 24" class="w-[24px] h-[24px] fill-[whitesmoke]">
+                        <g id="ui-icon-subscription" viewBox="0 0 24 24"><path d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"></path><path d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"></path><circle cx="16" cy="9" r="1"></circle><circle cx="16" cy="15" r="1"></circle><circle cx="16" cy="12" r="1"></circle></g>
+                      </svg>
+                    </span>
+                    خرید اشتراک و تماشا</button>
+
+                    <p class="text-[10px] text-[whitesmoke] mt-4">بالای ۱۵ سال - یک ساعت و ۳۱ دقیقه - محصول ایران - ۱۳۹۹ - کیفیت HD</p>
+                  
+
+                  </div>
+                  <img src="/images/mov_logo_146927_824.png" alt="" class="w-[220px] h-[115px]">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+  
+
+        <!--mortal wound-->
+        <div class="bg-[url('/images/mov_cvr_filimo_hor_148957_896.jpg')]   fav-switch-div-ser" id="mortaldiv">
+          <div class="first-grad">
+            <div class="second-grad">
+
+              <div class="h-[200px] flex justify-between">
+                <div class="flex flex-col">
+                  <a href="#" class="fav-mov">زخم کاری: انتقام</a>
+                <span class="fav-dirc">کارگردان: محمدحسین مهدویان</span>
+                <div class="mb-6">
+                  <span class="mortal-wound-genre">درام</span>
+                  <span class="mortal-wound-genre">خانوادگی</span>
+                </div>
+                <p class="fav-short">با لو رفتن سیما و مالک توسط اسپاد، سیما در تلاش است که خود را از مخمصه ای که در آن گرفتارشده نجات دهد از طرف دیگر س...</p>
+                </div>
+                <img src="/images/mov_logo_85436_913.png" alt="" class="w-[220px] h-[145px]">
+              </div>
+
+
+              <!--swiper-->
+        <div #swiperRef="" class="swiper mySwiperTwo">
+            <div class="swiper-wrapper swiper-wrapperTwo">
+              </div>
+            
+            <div class="swiper-button-next swiper-button-nextTwo"></div>
+            <div class="swiper-button-prev swiper-button-prevTwo"></div>
+          </div>
+        </div>
+
+            </div>
+          </div>
+
+        <!--karmani-->
+        <div class="fav-switch-div-ser bg-[url('/images/mov_cvr_filimo_hor_149248_426.jpg')] hidden " id="kar">
+          <div class="first-grad">
+            <div class="second-grad">
+              <div class="h-[200px] flex justify-between">
+                <div class="flex flex-col">
+                  <a href="#" class="fav-mov">کارمانی</a>
+                  <span class="fav-dirc">کارگردان: محمدرضا رضائیان</span>
+                  <div class="mb-6">
+                    <span class="mortal-wound-genre">ریلیتی شو</span>
+                  </div>
+                  <p class="fav-short">رسیدن به قله موفقیت هر کسب وکاری، نتیجه تلاش جمعیه، تلاش بی وقفه کارآفرینان و حمایت بی دریغ سرمایه گذاران. کارمانی این...</p>
+                </div>
+                <img src="/images/mov_logo_147340_200.png" alt="" class="w-[220px] h-[58px]">
+              </div>
+
+
+             
+
+  <div #swiperRef="" class="swiper mySwiperFour">
+    <div class="swiper-wrapper swiper-wrapperFour">
+      
+    </div>
+    <div class="swiper-button-next swiper-button-nextFour"></div>
+    <div class="swiper-button-prev swiper-button-prevFour"></div>
+  </div>
+
+        
+      </div>
+            </div>
+          </div>
+
+
+        <!--gol-->
+        <div class="bg-[url('/images/mov_cvr_filimo_hor_149195_885.jpg')] hidden fav-switch-div-ser" id="goldiv">
+          <div class="first-grad">
+            <div class="second-grad">
+
+              <div class="h-[200px] flex justify-between">
+                <div class="flex flex-col">
+                  <a href="#" class="fav-mov">گل یا پوچ</a>
+                <div class="mb-6">
+                  <span class="mortal-wound-genre">ریلیتی شو</span>
+                </div>
+                <p class="fav-short">گه یک قدمی شکست هم بودی، لبخند بزن تا حریفت به پیروزیش شک کنه!</p>
+                </div>
+                <img src="/images/mov_logo_148679_584.png" alt="" class="w-[220px] h-[98px]">
+              </div>
+
+              <!-- Swiper -->
+
+  <div #swiperRef="" class="swiper mySwiperFive">
+    <div class="swiper-wrapper swiper-wrapperFive">
+      
+    </div>
+    <div class="swiper-button-next swiper-button-nextFive"></div>
+    <div class="swiper-button-prev swiper-button-prevFive"></div>
+  </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!--lalaii-->
+        <div class="fav-switch-div-ser bg-[url('/images/mov_cvr_filimo_hor_149058_700.jpg')] hidden" id="ladiv">
+          <div class="first-grad">
+            <div class="second-grad">
+              <div class="h-[200px] flex justify-between">
+                <div class="flex flex-col">
+                  <a href="#" class="fav-mov">لالایی</a>
+                  <span class="fav-dirc">کارگردان: احمد درویشعلی پور</span>
+                  <div class="mb-6">
+                    <span class="mortal-wound-genre">خانوادگی</span>
+                  </div>
+                  <p class="fav-short">خانم گلشن مدتهاست در فقدان دوستش الهه که مدیر موسسه گلشنِ جاوید بوده،حال و روز خوشی ندارد،از سویی دیگر بچه های موسسه ه...</p>
+                </div>
+              </div>
+
+
+             
+
+  <div #swiperRef="" class="swiper mySwiperSix">
+    <div class="swiper-wrapper swiper-wrapperSix">
+      <div class="swiper-slide w-[307px] flex flex-col gap-1" id="Six">
+
+        <div class="flex justify-center items-center  bg-no-repeat bg-cover rounded h-[176px] w-[100%] blury bg-[url('/images/mov_149058_185143.jpg')]">
+          <div class="w-[48px] h-[48px] rounded-full flex justify-center items-center backdrop-brightness-50">
+            <img src="./images/icon-lock_fill.png" alt="" style="width: 24px; height: 24px;">
+          </div>
+        </div>
+        <p class="text-[whitesmoke] text-[11px] font-[700]">فصل 1 قسمت 1</p>
+
+            </div>
+    </div>
+    <div class="swiper-button-next swiper-button-nextSix"></div>
+    <div class="swiper-button-prev swiper-button-prevSix"></div>
+  </div>
+
+        
+      </div>
+            </div>
+          </div>
+
+
+        <!--joker-->
+        <div class="fav-switch-div-ser bg-[url('/images/mov_cvr_filimo_hor_149096_345.jpg')] hidden" id="jokerdiv">
+          <div class="first-grad">
+            <div class="second-grad">
+              <div class="h-[200px] flex justify-between">
+                <div class="flex flex-col">
+                  <a href="#" class="fav-mov">جوکر 2</a>
+                  <span class="fav-dirc">کارگردان: احسان علیخانی</span>
+                  <div class="mb-6">
+                    <span class="mortal-wound-genre">کمدی</span>
+                    <span class="mortal-wound-genre">ریلیتی شو</span>
+                  </div>
+                  <p class="fav-short">وقتی سیروس میمنت با غلامرضا نیکخواه تیم میشن حتی اگه مراسم ختم هم برگزار کنن خنده داره! ناهید مسلمی هم روش جدیدی برا...</p>
+                </div>
+                
+                <img src="/images/mov_logo_147471_422.png" alt="" class="w-[220px] h-[188px]">
+              </div>
+
+
+             
+
+  <div #swiperRef="" class="swiper mySwiperSeven">
+    <div class="swiper-wrapper swiper-wrapperSeven">
+      
+    </div>
+    <div class="swiper-button-next swiper-button-nextSeven"></div>
+    <div class="swiper-button-prev swiper-button-prevSeven"></div>
+  </div>
+
+        
+      </div>
+            </div>
+          </div>
+
+        <!--sar-->
+        <div class="fav-switch-div-ser bg-[url('/images/mov_cvr_filimo_hor_149249_118.jpg')] hidden" id="sardiv">
+          <div class="first-grad">
+            <div class="second-grad">
+              <div class="h-[200px] flex justify-between">
+                <div class="flex flex-col">
+                  <a href="#" class="fav-mov">سرگیجه</a>
+                  <span class="fav-dirc">کارگردان: محمد حاتمی</span>
+                  <div class="mb-6">
+                    <span class="mortal-wound-genre">ریلیتی شو</span>
+                  </div>
+                  <p class="fav-short">توی قسمت دوم این فصل، گزینه های روی میز زیاده و شرکت کننده ها حق انتخاب دارن. اما تبعات این انتخاب سنگینه. یا باید شکن...</p>
+                </div>
+                
+                <img src="/images/mov_logo_147881_512.png" alt="" class="w-[220px] h-[188px]">
+              </div>
+
+
+             
+
+  <div #swiperRef="" class="swiper mySwiperEight">
+    <div class="swiper-wrapper swiper-wrapperEight">
+      
+    </div>
+    <div class="swiper-button-next swiper-button-nextEight"></div>
+    <div class="swiper-button-prev swiper-button-prevEight"></div>
+  </div>
+
+        
+      </div>
+            </div>
+          </div>
+
+
+        <!--favorites ends-->
+        
+
+
+        <!--devices-->
+        <div class="bg-[#151515] items-center min-h-[560px] flex flex-row py-[65px] gap-[50px] justify-center max-md:flex-col max-xl:px-[1rem]" id="devices">
+          <div class="device_title hidden max-md:block">
+            <h1 class="title">تماشای فیلیمو با همه دستگاه‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌ها</h1>
+          <span class="leading-[25px] font-[100] text-[13px] block mb-[15px] text-[#D2D2D2]">
+            می‌توانید فیلیمو را به صورت هم‌زمان روی 3 دستگاه مختلف مثل موبایل، تبلت، لپ‌تاپ، تلویزیون و... تماشا کنید.
+          </span>
+          </div>
+          <div class="w-[40%]">
+            <img src="./images/deviceYaghi.png" alt="" class="w-[100%]"></div>
+          <div class="device">
+            <div class="device_title max-md:hidden">
+              <h1 class="title">تماشای فیلیمو با همه دستگاه‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌ها</h1>
+            <span class="leading-[25px] font-[100] text-[13px] block mb-[15px] text-[#D2D2D2]">
+              می‌توانید فیلیمو را به صورت هم‌زمان روی 3 دستگاه مختلف مثل موبایل، تبلت، لپ‌تاپ، تلویزیون و... تماشا کنید.
+            </span>
+            </div>
+            <div class="flex flex-col gap-4 max-md:gap-2">
+              <span class="items">
+                <img src="./images/laptop.png" alt="" class="w-[27px] h-[18px]">
+                <div class="item">
+                  <h2 class="titles">کامپیوتر و لپ‌تاپ</h2>
+                  <p class="example">windows PC - MacOS - Chorom OS</p>
+                </div>
+              </span>
+              <span class="items">
+                <img src="./images/mobile.png" alt="" class="w-[21.6px] h-[25.91px]">
+                <div class="item">
+                  <h2 class="titles">موبایل و تبلت</h2>
+                  <p class="example">Android Phone & Tablets - Iphone and Ipad - Amazon Fire Tablets</p>
+                </div>
+              </span>
+              <span class="items">
+                <img src="./images/game.png" alt="" class="w-[27px] h-[18px]">
+                <div class="item">
+                  <h2 class="titles">کنسول‌های بازی (Browser)</h2>
+                  <p class="example">Xbox Series S - Xbox Seris X - PS5 - PS4</p>
+                </div>
+              </span>
+            </div>
+            <button class="subscription-btn w-[160px] h-[38px] text-[12px] mt-[30px]">
+              <span>
+                <svg viewBox="0 0 24 24" class="w-[18px] h-[18px] fill-[whitesmoke]">
+                  <g id="ui-icon-subscription" viewBox="0 0 24 24"><path d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"></path><path d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"></path><circle cx="16" cy="9" r="1"></circle><circle cx="16" cy="15" r="1"></circle><circle cx="16" cy="12" r="1"></circle></g>
+                </svg>
+              </span>
+              خرید اشتراک و تماشا
+
+            </button>
+          </div>
+        </div>
+        <!--devices ends-->
+
+        <!--tv-->
+        <div class="w-[100%] flex flex-row pr-[65px] gap-[70px] justify-between min-h-[500px] relative bg-[#0d0d0d] pt-[50px] max-md:flex-col max-xl:pr-[1rem] max-md:px-[1rem] max-md:gap-[40px] max-md:pt-[25px] max-md:pb-[25px]">
+          <div class="hidden max-md:block" id="tv_title">
+            <h1 class="text-[16px] text-[whitesmoke] font-[700] leading-[18px] block mb-[15px] mt-[40px] font-['filimo']">چطور با تلویزیون، فیلیمو تماشا کنم؟</h1>
+          <p class="text-[#d2d2d2] text-[11px] font[100] mb-[20px] ">
+          ما برای راحتی شما و تماشای فیلیمو روی تلویزیون‌های مختلف 6 روش را فراهم 
+             کردیم. هرکدام از این 6 روش یک ویدیو آموزشی دارند که می‌توانید از لینک زیر،
+              آن‌ها را تماشا کنید و روشی که با تلویزیون شما سازگار است را انتخاب کنید.
+          </p>
+          </div>
+          <img src="./images/TVBG-yaghi.jfif" class="hidden max-md:block" alt="">
+          <div class="w-[40%] text-[whitesmoke] flex flex-col gap-[17px] z-20 max-md:gap-[10px] max-md:w-[100%]" id="tv-info">
+            <div class="max-md:hidden" id="tv_title">
+              <h1 class="text-[16px] font-[700] leading-[18px] block mb-[15px] mt-[40px] font-['filimo']">چطور با تلویزیون، فیلیمو تماشا کنم؟</h1>
+            <p class="text-[#d2d2d2] text-[11px] font[100] mb-[20px] ">
+            ما برای راحتی شما و تماشای فیلیمو روی تلویزیون‌های مختلف 6 روش را فراهم 
+               کردیم. هرکدام از این 6 روش یک ویدیو آموزشی دارند که می‌توانید از لینک زیر،
+                آن‌ها را تماشا کنید و روشی که با تلویزیون شما سازگار است را انتخاب کنید.
+            </p>
+            </div>
+              <span class="items">
+              <img src="./images/TV.png" alt="" class="w-[27px] h-[18px]">
+              <div class="item">
+                <h2 class="titles">تلویزیون</h2>
+                <p class="example text-nowrap max-sm:text-wrap">Amazon Fire TV - LG TVs - Chrome Cast - Apple TV - Android TV devices - Samsung</p>
+              </div>
+              </span>
+              <span class="items">
+                <img src="./images/androidTV.png" alt="" class="w-[27px] h-[18px]">
+                <div class="item">
+                  <h2 class="titles">اندروید تی‌وی</h2>
+                  <p class="example text-nowrap max-sm:text-wrap">NVIDIA - amazon - xiaomi - minix - skystream - turewell - ematic - humax - matricom</p>
+                </div>
+              </span>
+              <button id="btn_acc" class="h-[38px] w-[234px] bg-[#737373] rounded text-[12px] font-bold mt-[30px] transition-all duration-500 ease-in-out max-md:w-[100%]">ویدیو های آموزشی تماشا با تلویزیون</button>
+          </div>
+          <div class="w-[60%]  absolute bottom-0 left-0 max-md:hidden"><img src="./images/TVBG.png" alt="" class="w-[100%]" id="tv-img"></div>
+          
+        </div>
+        <!--tv ends-->
+
+        <!--free-->
+        <div class="w-[100%] h-[450px] flex flex-col justify-center  px-[100px] bg-[#151515] max-xl:px-[1rem]" style="background-size: cover;">
+          <span class=" text-[#e0e0e0] text-[20px] font-bold leading-[24px] mt-[70px]">محتواهای رایگان</span>
+          <div class="swiper w-[1350px] h-[260px] px[100px]">
+            <div #swiperRef="" class="swiper mySwiperOne">
+              <div class="swiper-wrapper swiper-wrapperOne">
+                
+              </div>
+              <div class="swiper-button-next swiper-button-nextOne"></div>
+              <div class="swiper-button-prev swiper-button-prevOne"></div>
+            </div>
+          </div>
+          
+        </div>
+
+        <!--kids-->
+        <div class="bg-[#0d0d0d] min-h-[475px] flex px-[200px] pt-[25px] bg-gradient-to-bl from-[#123642] from-0% via-[#151515] via-40% to-[#151515] justify-between gap-[70px] max-md:flex-col-reverse max-md:pt-7 max-md:items-center max-md:px-[1rem]">
+          <div class="w-[42%] flex flex-col justify-end max-xl:w-[50%] max-lg:w-[60%] max-md:w-[100%]" id="kid-img">
+            <img src="./images/bg-kids.png" alt="" class="w-[100%]">
+          </div>
+          <div class="w-[50%] flex flex-col justify-center h-[100%] my-[auto] gap-[20px] max-xl:w-[40%] max-lg:w-[35%] max-md:w-[100%] " id="kid-info">
+            <h1 class="text-[20px] text-[whitesmoke] max-md:text-nowrap">دنیایی متنوع از فیلم و کارتون‌های کودکانه</h1>
+            <p class="font-[100] text-[13px] text-[#d2d2d2]">ساخت فیلیمو کودک این امکان را می‌دهد که با انتخاب سن فرزندتان، یک فضای امن برای تماشای کودک بسازید؛ یعنی محتوای مخصوص سن خودش را ببیند و به بقیه فیلم و سریال‌ها دسترسی نداشته‌باشد.</p>
+            <div class="flex gap-[10px] max-lg:pb-5">
+              <button id="btn_acc" class="w-[120px] h-[38px] kid-btn text-nowrap">فیلیمو کودک بساز</button>
+              <button id="btn_acc" class="w-[136px] h-[38px] kid-btn text-nowrap">تماشای فیلیمو کودک</button>
+            </div>
+          </div>
+        </div>
+
+        <!--cinema-->
+        <div class="bg-[url('/images/bg-cinama.png')]  bg-no-repeat bg-cover">
+          <div class="h-[inherit] bg-gradient-to-b from-[#080103] from-0% px-[200px] pt-[70px] flex flex-col items-center pb-[70px] max-xl:px-[100px] max-lg:px-[75px]">
+            <h1 class="text-[whitesmoke] text-[17px] font-[700]">سینما آنلاین فیلیمو</h1>
+             <div class="flex justify-between w-[100%] mt-[30px] max-md:flex-col max-md:items-center max-md:gap-2">
+               <span class="cinema-check">
+                <span class="cinema-check-circle">
+                  <svg viewBox="0 0 24 24" class="w-[14px] h-[14px]">
+                    <g id="ui-icon-check" class="fill-[#1bab5c]">
+                      <path d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"></path></g></svg></span>
+              فیلم‌های روز سینمای ایران
+            </span>
+              <span class="cinema-check">
+                <span class="cinema-check-circle">
+                  <svg viewBox="0 0 24 24" class="w-[14px] h-[14px]"><g id="ui-icon-check" class="fill-[#1bab5c]"><path d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"></path></g></svg></span>
+                ۸ ساعت زمان برای مشاهده فیلم در هر کجا</span>
+              <span class="cinema-check">
+                <span class="cinema-check-circle">
+                  <svg viewBox="0 0 24 24" class="w-[14px] h-[14px]"><g id="ui-icon-check" class="fill-[#1bab5c]"><path d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"></path></g></svg></span>
+                خرید یک بلیت برای تماشا همراه با همه خانواده
+              </span>
+             </div>
+             
+             <div class="cinema-box  mt-[75px]">
+              <img src="./images/mov_148573_183474.jpg" alt="" class="rounded max-sm:w-[100px] max-sm:h-[133px]">
+              <div class="text-[whitesmoke] flex flex-col justify-between h-[inherit] mr-3">
+                <span class="flex">
+                  <a href="#" class="text-[13px] font-[700]">بی بدن</a>
+
+                  <span class="text-[whitesmoke] text-[10px] flex absolute left-10">
+                    <img src="./images/ticket.webp" alt="" class="w-[15.25px] h-[15.25px]"> 
+                    اکران آنلاین
+                  </span>
+                </span>
+              <p class="text-[12px] font-[100] text-[#D4D4D4] mt-2">کارگردان: null</p>
+              <span>
+                <span class="mortal-wound-genre backdrop-opacity-5" >جنایی</span>
+                <span class="mortal-wound-genre">درام</span>
+              </span>
+              <button class="border-[1px] w-[70px] h-[38.4px] border-[whitesmoke] text-[10px] rounded max-sm:w-[inherit]" id="cinema_btn">خریدبلیط</button>
+              
+            </div>
+            
+          </div>
+        </div>
+
+        </div>
+        <!--cinema ends-->
+
+        <!--comments-->
+        <div class="h-[387px] w-[100%] px-[100px] flex flex-col py-[60px] justify-center max-xl:px-[1rem]">
+
+          <h1 class="text-[white] text-[17px] font-[700]">نظر کاربران بعد از تماشای فیلیمو</h1>
+
+          <!--swiper-->
+          <div #swiperRef="" class="swiper mySwiperThree">
+            <div class="swiper-wrapper swiper-wrapperThree">
+              
+            </div>
+            <div class="swiper-button-next swiper-button-nextThree"></div>
+            <div class="swiper-button-prev swiper-button-prevThree"></div>
+          </div>
+        </div>
+        <!--comments ends-->
+
+        <!--FAQ-->
+        <div class="min-h-[500px] flex flex-col justify-center items-center px-[12rem] py-[75px] bg-[#101010] max-xl:px-[10rem] max-lg:px-[8rem] max-md:px-[1rem]">
+          <h2 class="text-[whitesmoke] text-[16px] mb-3">سوالات متداول</h2>
+          <h3 class="text-[13px] text-[#737373] mb-5">سوال شایع دیگر کاربران شاید برای شما هم پیش امده باشد</h3>
+
+          <ul class="w-[100%] flex flex-col gap-2">
+            <li class="faq-box" id="open_faq">
+              <div class="faq-box-closed">آیا می‌توانم فیلم‌های موجود در فیلیمو را دانلود کنم؟
+                <span id="faq_icon" class="h-[19px] w-[19px] transition-all duration-300 ease-in-out">
+                  <svg viewBox="0 0 24 24" class="faq-box-icon">
+                    <g id="ui-icon-close" viewBox="0 0 24 24" class="cz-color-16777215"><path d="M13.41 12l6.3-6.29a1 1 0 1 0-1.42-1.42L12 10.59 5.71 4.29A1 1 0 0 0 4.29 5.71L10.59 12l-6.3 6.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L12 13.41l6.29 6.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42Z" class="cz-color-16777215"></path></g>
+                  </svg>
+                </span>
+              </div>
+              <div class="faq-box-opened" id="faq_open">
+                بله، شما می‌توانید همه فیلم‌ و سریال‌های فیلیمو را داخل خود اپلیکیشن فیلیمو دانلود کنید و برای زمان‌هایی که اینترنت ندارید یا در سفر، هواپیما و قطار آ‌ن‌ها را تماشا کنید. برای دانلود هم از طریق رایانه و هم از طریق خود اپلیکیشن فیلیمو می‌توانید اقدام‌کنید. برای جزییات بیشتر می‌توانید فیلم‌های آموزشی مربوط به <a href="#" class="faq-link">دانلود از طریق سایت</a> و <a href="#" class="faq-link">دانلود از طریق  اپلیکیشن</a>  را تماشا کنید.
+              </div>
+            </li>
+            <li class="faq-box" id="open_faq">
+              <div class="faq-box-closed">آیا فیلیمو برای خارج از ایران در دسترس است؟
+                <span id="faq_icon" class="h-[19px] w-[19px]">
+                  <svg viewBox="0 0 24 24" class="faq-box-icon">
+                    <g id="ui-icon-close" viewBox="0 0 24 24" class="cz-color-16777215"><path d="M13.41 12l6.3-6.29a1 1 0 1 0-1.42-1.42L12 10.59 5.71 4.29A1 1 0 0 0 4.29 5.71L10.59 12l-6.3 6.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L12 13.41l6.29 6.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42Z" class="cz-color-16777215"></path></g>
+                  </svg>
+                </span>
+              </div>
+              <div class="faq-box-opened" id="faq_open">
+                خیر. درحال حاضر تماشای فیلیمو فقط در داخل کشور فعال است و امکان تماشا برای افراد خارج از کشور فعال نیست.
+              </div>
+            </li>
+            <li class="faq-box" id="open_faq">
+              <div class="faq-box-closed">آیا برای تماشای فیلم‌های اکران آنلاین، باید اشتراک بخرم؟
+                <span id="faq_icon" class="h-[19px] w-[19px]">
+                  <svg viewBox="0 0 24 24" class="faq-box-icon">
+                    <g id="ui-icon-close" viewBox="0 0 24 24" class="cz-color-16777215"><path d="M13.41 12l6.3-6.29a1 1 0 1 0-1.42-1.42L12 10.59 5.71 4.29A1 1 0 0 0 4.29 5.71L10.59 12l-6.3 6.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L12 13.41l6.29 6.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42Z" class="cz-color-16777215"></path></g>
+                  </svg>
+                </span>
+              </div>
+              <div class="faq-box-opened" id="faq_open">
+                تماشای فیلم‌های اکران آنلاین مانند تماشا در سینمای واقعی است؛ یعنی برای دیدن هر فیلم که در اکران آنلاین است باید بلیت تهیه کنید و به جای رفتن به سالن سینما، 8 ساعت فرصت دارید که آن فیلم را از داخل خانه تماشا کنید.
+              </div>
+            </li>
+            <li class="faq-box" id="open_faq">
+              <div class="faq-box-closed">از کجا می‌توانم نرم‌افزار اندروید یا iOS فیلیمو را دانلود کنم؟
+                <span id="faq_icon" class="h-[19px] w-[19px]">
+                  <svg viewBox="0 0 24 24" class="faq-box-icon">
+                    <g id="ui-icon-close" viewBox="0 0 24 24" class="cz-color-16777215"><path d="M13.41 12l6.3-6.29a1 1 0 1 0-1.42-1.42L12 10.59 5.71 4.29A1 1 0 0 0 4.29 5.71L10.59 12l-6.3 6.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L12 13.41l6.29 6.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42Z" class="cz-color-16777215"></path></g>
+                  </svg>
+                </span>
+              </div>
+              <div class="faq-box-opened" id="faq_open">
+                برای نصب نرم‌افزار اندرویدی فیلیمو می‌توانید ازطریق کافه بازار یا مایکت اقدام به دانلود کنید. یا می‌توانید روی گزینه روبرو بزنید و به‌طور مستقیم فایل نرم‌افزار را دریافت کنید. <a href="#" class="faq-link">(دانلود مستقیم نرم‌افزار اندروید)</a> برای دانلود نرم‌افزار iOS فیلیمو نیز کافیست روی گزینه روبرو بزنید و به‌طور مستقیم فایل نرم‌افزار را دریافت کنید. <a href="#" class="faq-link"> (دانلود مستقیم نرم‌افزار iOS)</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--FAQ ends-->
+
+        <!--ending-->
+        <div class="min-h-[380px] py-[75px] flex flex-col justify-center items-center bg-radial-gradient max-lg:px-[1rem]">
+          <img src="./images/logo_text.png" alt="" class="mb-10">
+
+          <div class="flex gap-7 max-md:flex-col max-md:items-center max-md:gap-3">
+
+            <span class="ending-text">
+              <span class="cinema-check-circle">
+                <svg viewBox="0 0 24 24" class="w-[14px] h-[14px]">
+                  <g id="ui-icon-check" class="fill-[#1bab5c]">
+                    <path d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"></path></g></svg></span>
+                    هزاران فیلم و سریال خارجی (دوبله و زیرنویس)
+            </span>
+
+            <span class="ending-text">
+              <span class="cinema-check-circle">
+                <svg viewBox="0 0 24 24" class="w-[14px] h-[14px]">
+                  <g id="ui-icon-check" class="fill-[#1bab5c]">
+                    <path d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"></path></g></svg></span>
+                    هزاران انیمیشن و کارتون برای کودکان
+            </span>
+
+            <span class="ending-text">
+              <span class="cinema-check-circle">
+                <svg viewBox="0 0 24 24" class="w-[14px] h-[14px]">
+                  <g id="ui-icon-check" class="fill-[#1bab5c]">
+                    <path d="M9.77 18.73a1 1 0 0 1-.71-.29L4.3 13.71a1 1 0 0 1 0-1.41 1 1 0 0 1 1.42 0l4 3.95 8.54-10.6A1 1 0 1 1 19.78 6.9L10.54 18.36a1 1 0 0 1-.72.37Z"></path></g></svg></span>
+                    پشتیبانی 24 ساعته برای راهنمایی شما
+            </span>
+          </div>
+
+          <button class="w-[285px] h-[59px] bg-[#1cb561] rounded-md text-[15px] font-[500] text-[whitesmoke] flex justify-center items-center mt-10 gap-2 transition-all duration-300 ease-in-out" id="btn_acc">
+            <span>
+              <svg viewBox="0 0 24 24" class="w-[24px] h-[24px] fill-[whitesmoke]">
+                <g id="ui-icon-subscription" viewBox="0 0 24 24"><path d="M19 4H5A3 3 0 0 0 2 7V17a3 3 0 0 0 3 3H19a3 3 0 0 0 3-3V7A3 3 0 0 0 19 4Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7A1 1 0 0 1 5 6H19a1 1 0 0 1 1 1Z"></path><path d="M12.4 11 9 8.74A1.25 1.25 0 0 0 7 9.79v4.42A1.26 1.26 0 0 0 9 15.27l3.44-2.21A1.26 1.26 0 0 0 12.4 11Z"></path><circle cx="16" cy="9" r="1"></circle><circle cx="16" cy="15" r="1"></circle><circle cx="16" cy="12" r="1"></circle></g>
+              </svg>
+            </span>
+            خرید اشتراک و تماشا
+          </button>
+        </div>
+        <!--endig ends-->
+
+        <!--bottom menu-->
+        <div class="h-[30px] px-2 flex justify-between items-center w-[100%] bg-[#191919] fixed bottom-0 left-0 z-50">
+          <ul class="flex h-[inherit]  items-center gap-5 w-[inherit]">
+            <li class="bottom-menu flex h-[inherit] items-center gap-1">
+              <span>
+                <svg viewBox="0 0 24 24" class="w-[18px] h-[18px] fill-[#959595]">
+                  <g id="ui-icon-tv" viewBox="0 0 24 24"><g><path d="M15 20.5H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2Z"></path><path d="M19.5 3.5H4.5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V6.5A3 3 0 0 0 19.5 3.5Zm1 13a1 1 0 0 1-1 1H4.5a1 1 0 0 1-1-1V6.5a1 1 0 0 1 1-1h15a1 1 0 0 1 1 1Z"></path></g></g>
+                </svg>
+              </span>
+              <a href="#">تماشا‌ با تلویزیون</a>
+            </li>
+            <li class="bottom-menu"><a href="#">اپلیکیشن‌ها</a></li>
+            <li class="bottom-menu"><a href="#">تماس و پشتیبانی</a></li>
+            <li class="bottom-menu"><a href="#">فروشگاه</a></li>
+            <li class="bottom-menu bm-hover flex items-center relative">
+              <span>
+                <svg viewBox="0 0 24 24"  class="w-[18px] h-[18px] fill-[#959595]">
+                  <g id="ui-icon-arrow_drop_down" viewBox="0 0 24 24"><path d="M12 17a1 1 0 0 1-.77-.36l-5-6A1 1 0 0 1 7 9H17a1 1 0 0 1 .77 1.64l-5 6A1 1 0 0 1 12 17Z"></path></g>
+                </svg>
+              </span>
+              <a href="#">سایر لینک‌ها</a>
+            <ul class="bottom_menu_box invisible">
+              <li class="bottom-menu fav-bottom">قوانین</li>
+              <li class="bottom-menu fav-bottom">به ما بپیوندید</li>
+              <li class="bottom-menu fav-bottom">تبلیغات در فیلیمو</li>
+              <li class="bottom-menu fav-bottom">لوگو</li>
+              <li class="bottom-menu fav-bottom">دانلود فیلم و سریال</li>
+            </ul>
+            </li> 
+          </ul>
+
+          <span class="bottom-menu h-[inherit] text-nowrap flex items-center bm-hover relative">
+            <span>
+              <svg viewBox="0 0 24 24"  class="w-[18px] h-[18px] fill-[#959595]">
+                <g id="ui-icon-arrow_drop_down" viewBox="0 0 24 24"><path d="M12 17a1 1 0 0 1-.77-.36l-5-6A1 1 0 0 1 7 9H17a1 1 0 0 1 .77 1.64l-5 6A1 1 0 0 1 12 17Z"></path></g>
+              </svg>
+            </span>
+            <a href="#" class="bottom-menu-items">شبکه‌های اجتماعی</a>
+            <ul class="bottom_menu_box left-0 invisible gap-1">
+              <li class="bottom-menu fav-bottom">
+                <span>
+                  <svg viewBox="0 0 24 24" class="bottom-icon">
+                    <g id="ui-icon-redvod" viewBox="0 0 24 24"><path d="M10.56 2.12 8.63 1.61a3.25 3.25 0 0 0-4 2.31L4.17 5.74A10 10 0 0 1 10.56 2.12Z"></path><path d="M2.08 13.59l-.47 1.78a3.25 3.25 0 0 0 2.31 4l1.85.49A10 10 0 0 1 2.08 13.59Z"></path><path d="M20.08 4.65 18 4.1a9.94 9.94 0 0 1 3.81 6.67l.57-2.14A3.25 3.25 0 0 0 20.08 4.65Z"></path><path d="M13.39 21.86l2 .53a3.25 3.25 0 0 0 4-2.31l.56-2.1A10 10 0 0 1 13.39 21.86Z"></path><path d="M12 2.9A9.1 9.1 0 1 0 21.1 12 9.09 9.09 0 0 0 12 2.9ZM6.84 7.44a2.6 2.6 0 1 1 2.07 3A2.6 2.6 0 0 1 6.84 7.44Zm3.79 7.86a2.6 2.6 0 1 1-2.06-3A2.6 2.6 0 0 1 10.63 15.3Zm.19-3.45a1.16 1.16 0 1 1 .91 1.35A1.15 1.15 0 0 1 10.82 11.85Zm6.34 4.71a2.6 2.6 0 1 1-2.07-3A2.6 2.6 0 0 1 17.16 16.56Zm1.32-6.88a2.6 2.6 0 1 1-2.06-3A2.6 2.6 0 0 1 18.48 9.68Z"></path></g>
+                  </svg>
+                </span>
+                آپارات
+              </li>
+              <li class="bottom-menu fav-bottom">
+                <span>
+                  <svg viewBox="0 0 24 24" class="bottom-icon">
+                    <g id="ui-icon-telegram" viewBox="0 0 24 24"><path d="M2.48 11 21.1 3.78C22 3.47 22.72 4 22.44 5.3h0L19.27 20.24c-.23 1.06-.86 1.32-1.74.82L12.7 17.5l-2.33 2.24a1.23 1.23 0 0 1-1 .48l.35-4.92 9-8.08c.39-.34-.09-.54-.6-.2L7 14 2.26 12.5c-1-.33-1.06-1 .22-1.53Z"></path></g>
+                  </svg>
+                </span>
+                تلگرام
+              </li>
+              <li class="bottom-menu fav-bottom">
+                <span><svg viewBox="0 0 24 24" class="bottom-icon">
+                  <g id="ui-icon-twitter" viewBox="0 0 24 24"><path d="M22.63 5.33a8.51 8.51 0 0 1-2.47.7 4.4 4.4 0 0 0 1.9-2.45 8.53 8.53 0 0 1-2.74 1.08 4.21 4.21 0 0 0-6.07-.2 4.45 4.45 0 0 0-1.36 3.21 4.88 4.88 0 0 0 .11 1A12.1 12.1 0 0 1 3.13 4.09 4.49 4.49 0 0 0 4.45 10 4.21 4.21 0 0 1 2.5 9.42v.05A4.4 4.4 0 0 0 6 13.8 4.24 4.24 0 0 1 4 13.87a4.33 4.33 0 0 0 4 3.07 8.52 8.52 0 0 1-5.33 1.88 8.91 8.91 0 0 1-1-.07 12 12 0 0 0 6.61 2c7.91 0 12.22-6.7 12.23-12.52l.4-.92A8.81 8.81 0 0 0 22.63 5.33Z"></path></g>
+                </svg></span>
+                توئیتر
+              </li>
+              <li class="bottom-menu fav-bottom">
+                <span>
+                  <svg viewBox="0 0 24 24" class="bottom-icon">
+                    <g id="ui-icon-instagram" viewBox="0 0 24 24"><path d="M22.44 7.68A7.69 7.69 0 0 0 22 5.13a5.32 5.32 0 0 0-3.08-3.08 7.59 7.59 0 0 0-2.54-.49C15.22 1.51 14.86 1.5 12 1.5l0 0c-2.84 0-3.2 0-4.31.06a7.87 7.87 0 0 0-2.54.51A5.32 5.32 0 0 0 2.05 5.17a7.69 7.69 0 0 0-.49 2.55C1.51 8.84 1.5 9.19 1.5 12s0 3.2.06 4.32a8 8 0 0 0 .53 2.51A5.32 5.32 0 0 0 5.17 22a7.84 7.84 0 0 0 2.54.49c1.11 0 1.47.06 4.31.06s3.2 0 4.31-.06A7.84 7.84 0 0 0 18.87 22 5.32 5.32 0 0 0 22 18.87a7.69 7.69 0 0 0 .49-2.55c0-1.12.06-1.48.06-4.32S22.5 8.8 22.44 7.68ZM20.5 16.24a5.9 5.9 0 0 1-.36 2 3.49 3.49 0 0 1-2 2 5.38 5.38 0 0 1-1.94.36c-1.1.06-1.43.07-4.23.07s-3.13 0-4.23-.07a5.38 5.38 0 0 1-1.94-.36 3.49 3.49 0 0 1-2-2 5.6 5.6 0 0 1-.36-1.94c-.08-1.11-.08-1.44-.08-4.24s0-3.13.06-4.24a5.63 5.63 0 0 1 .38-1.94 3.48 3.48 0 0 1 2-2 5.85 5.85 0 0 1 1.94-.36c1.1-.08 1.44-.08 4.23-.08s3.13 0 4.23.06a5.85 5.85 0 0 1 1.94.36 3.54 3.54 0 0 1 2 2 5.86 5.86 0 0 1 .36 1.95c.05 1.1.06 1.44.06 4.23S20.56 15.14 20.5 16.24Z"></path><path d="M12 6.64A5.36 5.36 0 1 0 17.34 12 5.35 5.35 0 0 0 12 6.64Zm0 8.83A3.48 3.48 0 1 1 15.46 12 3.47 3.47 0 0 1 12 15.47Z"></path><path d="M17.46 4.86a1.26 1.26 0 1 0 1.26 1.26A1.25 1.25 0 0 0 17.46 4.86Z"></path></g>
+                  </svg>
+                </span>
+                اینستاگرام
+              </li>
+            </ul>
+          </span>
+
+        </div>
+        <!--bottom menu ends-->
+         
+        </div>
+      </div>
+    </div>
+    
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="/public/javascript/main.js"></script>
+  </body>
+</html>
